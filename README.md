@@ -1,5 +1,5 @@
 # Warning. This is my first plugin for Webpack. May be bugs 🐜.
-Validate html files with [html-validate](https://html-validate.org/)
+Validate html files with [html-validate](https://html-validate.org/) only static html files.
 
 `
 npm i -D https://github.com/alte0/webpack-html-validate-plugin
