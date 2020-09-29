@@ -1,6 +1,6 @@
 {
-  "name": "webpack-html-validate",
-  "version": "1.0.0",
+  "name": "webpack-html-validate-plugin",
+  "version": "1.0.1",
   "description": "Webpack plugin validate html files with https://html-validate.org/",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alte0/webpack-html-validate.git"
+    "url": "git+https://github.com/alte0/webpack-html-validate-plugin.git"
   },
   "keywords": [
     "html",
@@ -19,9 +19,9 @@
   "author": "Maxim Dmitriev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alte0/webpack-html-validate/issues"
+    "url": "https://github.com/alte0/webpack-html-validate-plugin/issues"
   },
-  "homepage": "https://github.com/alte0/webpack-html-validate#readme",
+  "homepage": "https://github.com/alte0/webpack-html-validate-plugin#readme",
   "dependencies": {
     "ansi-colors": "^4.1.1",
     "fancy-log": "^1.3.3",
