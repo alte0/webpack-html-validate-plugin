@@ -1,0 +1,22 @@
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редактора
+.idea
+*.sublime*
+.vscode
+
+# Вспомогательные файлы
+*.log*
+node_modules/
+bower_components/
+
+# Папка с собранными файлами проекта
+build/
+src/*.html
+src/images/sprite
+src/images/sprite-svg
+src/images/symbols-svg
+src/js/script.js
+src/css/

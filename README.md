@@ -1,2 +1,33 @@
-# webpack-html-validate
-Webpack plugin validate html files with https://html-validate.org/
+# Warning. This is my first plugin for Webpack. May be bugs 🐜.
+Validate html files with [html-validate](https://html-validate.org/)
+
+`
+npm i -D https://github.com/alte0/webpack-html-validate-plugin
+`
+
+Use plugin:
+
+```sh
+const WebpackHtmlValidatePlugin = require('webpack-html-validate')
+
+ plugins: [
+   new WebpackHtmlValidatePlugin()
+ ]
+```
+## Configuration
+
+Create `.htmlvalidate.json`:
+
+```js
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+
+  "rules": {
+    "close-order": "error",
+    "void": ["warn", {"style": "omit"}]
+  }
+}
+```
+####Look more - [gitlab html-validate](https://gitlab.com/html-validate/html-validate/)
