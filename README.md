@@ -22,12 +22,7 @@ Create `.htmlvalidate.json`:
 {
   "extends": [
     "html-validate:recommended"
-  ],
-
-  "rules": {
-    "close-order": "error",
-    "void": ["warn", {"style": "omit"}]
-  }
+  ]
 }
 ```
 ####Look more - [gitlab html-validate](https://gitlab.com/html-validate/html-validate/)
