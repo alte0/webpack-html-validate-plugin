@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 var HtmlValidate = require('html-validate').HtmlValidate;
-var c = require("ansi-colors");
-var log = require("fancy-log");
+var c = require('ansi-colors');
+var log = require('fancy-log');
 var textFormat = require('html-validate/build/formatters/text').default;
 
-function validateHtml(sourceFileHtml, filename) {
+function validateHtml (sourceFileHtml, filename) {
   try {
     var htmlvalidate = new HtmlValidate();
 
@@ -13,7 +13,7 @@ function validateHtml(sourceFileHtml, filename) {
       /* markup to validate */
       data: sourceFileHtml,
       /* filename to put in report, content is not read */
-      filename: filename,
+      filename: filename
     });
 
     if (!report.valid) {
@@ -28,11 +28,11 @@ function validateHtml(sourceFileHtml, filename) {
 }
 
 class WebpackHtmlValidatePlugin {
-  constructor() {
+  constructor () {
     this.REGEX_HTML = new RegExp(/\.html$/);
   }
 
-  apply(compiler) {
+  apply (compiler) {
     compiler.hooks.emit.tapAsync('WebpackHtmlValidatePlugin', (compilation, callback) => {
       var allFiles = compilation.assets;
 
