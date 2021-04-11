@@ -3,7 +3,7 @@
 var HtmlValidate = require('html-validate').HtmlValidate;
 var c = require('ansi-colors');
 var log = require('fancy-log');
-var textFormat = require('html-validate/build/formatters/text').default;
+var textFormat = require('html-validate/dist/formatters/text').default;
 
 function validateHtml (sourceFileHtml, filename) {
   try {
@@ -19,7 +19,7 @@ function validateHtml (sourceFileHtml, filename) {
     if (!report.valid) {
       /* errors log */
       log(c.red(`File is not valid => ${report.results[0].filePath}`));
-      log(c.green(`File - ${textFormat(report.results)}`));
+      log(c.white(`File\n${textFormat(report.results)}`));
     }
   } catch (error) {
     log.error('WebpackHtmlValidate ERROR');
