@@ -1,6 +1,6 @@
 {
   "name": "webpack-html-validate-plugin",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Webpack plugin validate html files with https://html-validate.org/",
   "main": "index.js",
   "scripts": {
